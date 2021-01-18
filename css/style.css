@@ -1,0 +1,385 @@
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+header{
+    padding: 15px 0;
+    background-color: #1a1d20;
+}
+nav{
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    font: 300 1.3em "Open-sans";
+    color: #fff;
+    margin: 10px 0 0 0;
+    transition: text-shadow .1s linear;
+}
+nav ul li:hover{
+    text-shadow: 0 8px 10px #2ec3e3;
+}
+.intro{
+    background: url(../img/introbg.jpg) center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font: 400 2em "Open-sans";
+    color: #fff;
+    margin: 0 0 70px 0;
+}
+.intro a{
+    padding: 17px 54px;
+    font:300 1.2em "Open-sans" ;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+    text-shadow: 0 5px 10px #2ec3e3;
+    box-shadow: 0 0 20px #2ec3e3 inset, 0 0 20px transparent;
+    transition: box-shadow .3s linear;
+}
+.intro a:hover{
+    text-shadow: 0 5px 10px #2ec3e3;
+    box-shadow:  0 0 20px transparent inset , 0 0 20px #2ec3e3;
+}
+#features{
+    
+    background: #2ec3e3;
+    text-align: center;
+    position: relative;
+}
+#features section{
+    padding: 20px 10px 66px 10px;
+}
+#features h2{
+    color: #ffffff;
+    font: 300 1.8em "Open Sans";
+}
+#features p{
+    color: #ffffff;
+    font: 300 1em "Open Sans";
+}
+#features h3 {
+    color: #fff;
+    font: 500 1.3em "Open Sans";
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+.flex article{
+    margin: 0 0 30px 0;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 10px 0 10px 0;
+}
+#features section div:first-child{
+    position: absolute;
+    width: 100%;
+    background: url(../img/bg.png) top center/cover;
+    top: -130px;
+    left: 0;
+    height: 145px;
+}
+
+#line{
+    height: 10px;
+    background: url(../img/line.png) center/cover;
+}
+#gallery{
+    padding: 65px 0 80px 0;
+    background: #f5f5f5;
+    text-align: center;
+}
+#gallery h2,#gallery p,#testimonials section h2{
+    color: #464545;
+    font: 400 1.8em "Open Sans";
+}
+#gallery p{
+    
+   font-size: 1em;
+   margin: 0 0 50px 0;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-row-gap: 20px;
+}
+.cart{
+    height: 100%;
+    transition: transform .5s linear;
+   
+    background: url(../img/gallery1.jpg) no-repeat center/cover;
+}
+.cart2{
+    height: 100%;
+    transition: transform .5s linear;
+   
+    background: url(../img/gallery2.jpg) no-repeat center/cover;
+}
+.cart3{
+    height: 100%;
+    transition: transform .5s linear;
+   
+    background: url(../img/gallery3.jpg) no-repeat center/cover;
+}
+.cart4{
+    height: 100%;
+    transition: transform .5s linear;
+   
+    background: url(../img/gallery4.jpg) no-repeat center/cover;
+}
+.cart5{
+    height: 100%;
+    transition: transform .5s linear;
+    background: url(../img/gallery5.jpg) no-repeat center/cover;
+}
+.cart6{
+    height: 100%;
+    transition: transform .5s linear;
+    background: url(../img/gallery6.jpg) no-repeat center/cover;
+}
+.grid > div {
+    position: relative;
+    perspective: 1500px; 
+}
+.grid div  div a{
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+}
+
+
+.grid > div:hover .cart,.grid > div:hover .cart2,.grid > div:hover .cart3,.grid > div:hover .cart4,.grid > div:hover .cart5,.grid > div:hover .cart6{
+    transform: rotateY(360deg);
+}
+#testimonials section{
+    padding: 20px 0 70px 0;
+    text-align: center;
+}
+#testimonials p{
+    text-align: left;
+    color: #898989;
+    font: 400 .8em "Open-sans";
+    line-height: 24px;
+}
+#testimonials p:last-child{
+    font: 600 1em "Open-sans";
+    color: #1e1c1c;
+    text-align: right;
+}
+
+#testimonials  div{
+    margin: 30px 15px 0 15px;
+    padding: 45px;
+    background: #f6f3f3;
+    position: relative;
+}
+#testimonials div::after{
+    content: "";
+    width: 22px;
+    height: 31px;
+    position: absolute;
+    bottom: -31px;
+    right: 7px;
+    background: url(../img/triangles.png) center/cover;
+}
+#testimonials  div img:nth-child(1){
+    position: absolute;
+    top: 47px;
+    left: 12px;
+}
+#testimonials  div img:nth-child(2){
+    position: absolute;
+    bottom: 50px;
+    right: 11px;
+    transform: rotateX(180deg) rotateY(180deg);
+}
+#subscribe{
+    background: #1a1d20;
+    padding: 40px 0;
+}
+
+#subscribe h4{
+    font: 300 1.5em "Open-sans" ;
+    color: #fff;
+    text-align: center;
+}
+#subscribe form{
+    display: table;
+    margin: 15px auto 0 auto;
+}
+#subscribe form a{
+    display: inline-block;
+    text-transform: uppercase;
+    font: 700 .9em "Open-sans";
+    color: #fff;
+    padding: 20px;
+    background: #ffa200;
+    border-radius: 4px;
+    transition: box-shadow .2s linear;
+}
+#subscribe form a:hover{
+    box-shadow: 0 5px 10px #ffa200;
+}
+#subscribe form input{
+   margin: 0 5px 0 0 ;
+    padding: 20px 12px;
+    background: #292c2f;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    transition: box-shadow .3s linear;
+}
+#subscribe form input:focus{
+    box-shadow: 0 0 10px #2ec3e3;  
+}
+
+#features__two{
+    position: relative;
+    text-align: center;
+    background: url(../img/people.jpg) center/cover;
+  
+}
+
+#features__two >div{
+    background: rgba(45, 194, 227, 0.900);
+    padding: 40px 0 60px 0;
+}
+#features__two a  {
+    font-size: 3em;
+    color: #fff;
+    
+}
+#txt{
+    font: 400 1em "Open-sans";
+    color: rgb(255, 255, 255);
+    margin: 20px 0 30px 0  ;
+}
+#txt span{
+    font-weight:600 ;
+}
+#txt2{
+    font: 600 1em "Open-sans";
+    color: rgb(255, 255, 255);
+   
+}
+footer{
+    
+    background: #111314;
+}
+footer h5{
+    font: 300 1.5em "Open-sans";
+    color: #fff;
+    text-align: center;
+}
+footer > section{
+    padding: 45px 10px 55px 10px !important;
+}
+footer section > div{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+footer section > div a{
+    display: inline-block;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin: 10px 15px 0 0;
+    transition: box-shadow .3s linear;
+}
+footer section > div a:nth-child(1){
+    padding: 10px 15px;
+    background: #3b5998;
+    color:#fff;
+}
+footer section > div a:nth-child(1):hover{
+    box-shadow: 0 5px 10px #3b5998;
+}
+footer section > div a:nth-child(2){
+   padding: 10px 12px;
+    background: #00aced;
+    color:#fff;
+}
+footer section > div a:nth-child(2):hover{
+    box-shadow: 0 5px 10px #00aced;
+}
+footer section > div a:nth-child(3){
+    padding: 10px 9px;
+    background: #dd4b39;
+    color:#fff;
+}
+footer section > div a:nth-child(3):hover{
+    box-shadow: 0 5px 10px #dd4b39;
+}
+footer section > div a:nth-child(4){
+    padding: 10px 13px;
+    background: #3e9dd7;
+    color:#fff;
+}
+footer section > div a:nth-child(4):hover{
+    box-shadow: 0 5px 10px #3e9dd7;
+}
+footer section > div a:nth-child(5){
+    padding: 10px 13px;
+    background: #ffa500;
+    color:#fff;
+}
+footer section > div a:nth-child(5):hover{
+    box-shadow: 0 5px 10px #ffa500;
+}
+h6{
+    color: #ababab;
+    font: .9em Tahoma;
+    text-align: center;
+    padding: 20px 0;
+    background: #000;
+}
+
+@media only screen and (min-width:768px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0 0 0 30px;
+    }
+    .flex{
+        flex-direction: row;
+    }
+    .flex article{
+        border: 0;
+    }
+    .flex article:nth-child(2){
+        margin:  0 40px 30px 40px;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-column-gap: 30px;
+    }
+
+    #testimonials div{
+        width: 50%;
+        margin: 20px auto 0 auto;
+    }
+    #subscribe form{
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+    #subscribe form,#subscribe h4{
+        display: inline-block;
+    }
+    #subscribe div > div{
+        margin: 0 auto;
+        display: table;
+    }
+}
